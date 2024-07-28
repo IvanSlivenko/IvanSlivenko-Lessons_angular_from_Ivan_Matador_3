@@ -1,0 +1,5 @@
+<div class="list-container">
+    <ng-container *ngFor='let currentUser of usersList$ | async'>
+        <app-user [user]="currentUser"></app-user>
+    </ng-container>
+</div>
